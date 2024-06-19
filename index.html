@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Car Game with WASD Controls</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Ground -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#7BC8A4"></a-plane>
+
+      <!-- Car -->
+      <a-box id="car" position="0 0.5 0" rotation="0 0 0" width="1" height="1" depth="2" color="#FF5733"></a-box>
+
+      <!-- Camera -->
+      <a-entity camera look-controls position="0 2 5"></a-entity>
+      
+      <!-- Sky -->
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+    <script src="controls.js"></script> <!-- Link to the JavaScript file -->
+  </body>
+</html>
